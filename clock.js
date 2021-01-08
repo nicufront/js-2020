@@ -3,7 +3,7 @@ hour = 10
 
 document.getElementById('year').value
 
-if ( hour == 19 ) {
+if ( hour != 19 ) {
     document.write("Bine ai venit la curs!")
 }
 
