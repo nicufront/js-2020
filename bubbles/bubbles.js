@@ -1,4 +1,4 @@
-var numberOfBubbles = 100
+var numberOfBubbles = 20
 for (let i = 0; i < numberOfBubbles; i++) {
     newBubble()
 }
@@ -7,8 +7,14 @@ function newBubble() {
     bubble.classList.add("bubble")
     let x = randomNumber(100)
     let delay = randomNumber(3000)
-    bubble.style.left = x + "vw"
-    bubble.style.animationDelay = delay + "ms"
+    let red = randomNumber(255)
+    let green = randomNumber(255)
+    let blue = randomNumber(255)
+    let size = randomNumber(2) + 1 
+    bubble.style.left = `${x}vw`
+    bubble.style.animationDelay = `${delay}ms`
+    bubble.style.borderColor = `rgb(${red},${green},${blue})`
+    bubble.style.height = bubble.style.width = `${size}em`
     document.querySelector("body").appendChild(bubble)
 }
 function randomNumber(max) {
