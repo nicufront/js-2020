@@ -21,7 +21,7 @@ input[type="button"] {
     border-radius: 10%;
     font-family: monospace;
     font-size: 1.5em;
-    color: orangered;
+    color: rgb(255, 69, 0);
 } 
 .hidden {
     visibility: hidden;
